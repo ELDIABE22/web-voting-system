@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Votación Online</h1>
+            <p>Selecciona tu opción preferida</p>
+        </header>
+
+        <main>
+            <form class="voting-form">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="checkbox" id="opt1" name="vote" value="opcion1">
+                        <label for="opt1">FRONTEND</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="opt2" name="vote" value="opcion2">
+                        <label for="opt2">BACKEND</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="opt3" name="vote" value="opcion3">
+                        <label for="opt3">FULLSTACK</label>
+                    </div>
+                </div>
+                <button type="submit" class="vote-button">Enviar Voto</button>
+            </form>
+
+            <section class="results">
+                <h2>Resultados</h2>
+                <div class="results-grid">
+                    <div class="result-item">FRONTEND: <span>50%</span></div>
+                    <div class="result-item">BACKEND: <span>75%</span></div>
+                    <div class="result-item">FULLSTACK: <span>100%</span></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
